@@ -1,7 +1,7 @@
-Reading netlist file: "/home/muheet/tang_tangnano/TangNano-9K-example/picotiny/picotiny/project/impl/gwsynthesis/picotiny.vg"
-Parsing netlist file "/home/muheet/tang_tangnano/TangNano-9K-example/picotiny/picotiny/project/impl/gwsynthesis/picotiny.vg" completed
+Reading netlist file: "/home/fayz/Documents/picotiny/project/impl/gwsynthesis/picotiny.vg"
+Parsing netlist file "/home/fayz/Documents/picotiny/project/impl/gwsynthesis/picotiny.vg" completed
 Processing netlist completed
-Reading constraint file: "/home/muheet/tang_tangnano/TangNano-9K-example/picotiny/picotiny/project/picotiny.cst"
+Reading constraint file: "/home/fayz/Documents/picotiny/project/picotiny.cst"
 Physical Constraint parsed completed
 Running placement......
 [10%] Placement Phase 0 completed
@@ -20,10 +20,10 @@ Bitstream generation in progress......
 Bitstream generation completed
 Running power analysis......
 [100%] Power analysis completed
-Generate file "/home/muheet/tang_tangnano/TangNano-9K-example/picotiny/picotiny/project/impl/pnr/picotiny.power.html" completed
-Generate file "/home/muheet/tang_tangnano/TangNano-9K-example/picotiny/picotiny/project/impl/pnr/picotiny.pin.html" completed
-Generate file "/home/muheet/tang_tangnano/TangNano-9K-example/picotiny/picotiny/project/impl/pnr/picotiny.rpt.html" completed
-Generate file "/home/muheet/tang_tangnano/TangNano-9K-example/picotiny/picotiny/project/impl/pnr/picotiny.rpt.txt" completed
-Generate file "/home/muheet/tang_tangnano/TangNano-9K-example/picotiny/picotiny/project/impl/pnr/picotiny.tr.html" completed
-Sat Oct  5 23:51:10 2024
+Generate file "/home/fayz/Documents/picotiny/project/impl/pnr/picotiny.power.html" completed
+Generate file "/home/fayz/Documents/picotiny/project/impl/pnr/picotiny.pin.html" completed
+Generate file "/home/fayz/Documents/picotiny/project/impl/pnr/picotiny.rpt.html" completed
+Generate file "/home/fayz/Documents/picotiny/project/impl/pnr/picotiny.rpt.txt" completed
+Generate file "/home/fayz/Documents/picotiny/project/impl/pnr/picotiny.tr.html" completed
+Sun Oct  6 00:37:03 2024
 

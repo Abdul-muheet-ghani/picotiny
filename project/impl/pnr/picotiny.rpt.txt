@@ -5,34 +5,34 @@
 1. PnR Messages
 
   <Report Title>: PnR Report
-  <Design File>: /home/muheet/tang_tangnano/TangNano-9K-example/picotiny/picotiny/project/impl/gwsynthesis/picotiny.vg
-  <Physical Constraints File>: /home/muheet/tang_tangnano/TangNano-9K-example/picotiny/picotiny/project/picotiny.cst
-  <Timing Constraints File>: /home/muheet/tang_tangnano/TangNano-9K-example/picotiny/picotiny/project/picotiny.sdc
+  <Design File>: /home/fayz/Documents/picotiny/project/impl/gwsynthesis/picotiny.vg
+  <Physical Constraints File>: /home/fayz/Documents/picotiny/project/picotiny.cst
+  <Timing Constraints File>: /home/fayz/Documents/picotiny/project/picotiny.sdc
   <Tool Version>: V1.9.9.03 Education
   <Part Number>: GW1NR-LV9QN88PC6/I5
   <Device>: GW1NR-9
   <Device Version>: C
-  <Created Time>:Sat Oct  5 23:51:10 2024
+  <Created Time>:Sun Oct  6 00:37:02 2024
 
 
 2. PnR Details
 
   Running placement:
-    Placement Phase 0: CPU time = 0h 0m 3s, Elapsed time = 0h 0m 3s
-    Placement Phase 1: CPU time = 0h 0m 0.217s, Elapsed time = 0h 0m 0.219s
-    Placement Phase 2: CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s
-    Placement Phase 3: CPU time = 0h 0m 5s, Elapsed time = 0h 0m 5s
-    Total Placement: CPU time = 0h 0m 11s, Elapsed time = 0h 0m 11s
+    Placement Phase 0: CPU time = 0h 0m 4s, Elapsed time = 0h 0m 4s
+    Placement Phase 1: CPU time = 0h 0m 0.309s, Elapsed time = 0h 0m 0.306s
+    Placement Phase 2: CPU time = 0h 0m 4s, Elapsed time = 0h 0m 4s
+    Placement Phase 3: CPU time = 0h 0m 8s, Elapsed time = 0h 0m 8s
+    Total Placement: CPU time = 0h 0m 16s, Elapsed time = 0h 0m 16s
  Running routing:
-    Routing Phase 0: CPU time = 0h 0m 0.003s, Elapsed time = 0h 0m 0.003s
-    Routing Phase 1: CPU time = 0h 0m 4s, Elapsed time = 0h 0m 4s
-    Routing Phase 2: CPU time = 0h 0m 8s, Elapsed time = 0h 0m 8s
+    Routing Phase 0: CPU time = 0h 0m 0.004s, Elapsed time = 0h 0m 0.004s
+    Routing Phase 1: CPU time = 0h 0m 6s, Elapsed time = 0h 0m 6s
+    Routing Phase 2: CPU time = 0h 0m 12s, Elapsed time = 0h 0m 12s
     Routing Phase 3: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s
-    Total Routing: CPU time = 0h 0m 12s, Elapsed time = 0h 0m 12s
+    Total Routing: CPU time = 0h 0m 18s, Elapsed time = 0h 0m 18s
  Generate output files:
-    CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s
+    CPU time = 0h 0m 3s, Elapsed time = 0h 0m 3s
 
- Total Time and Memory Usage: CPU time = 0h 0m 25s, Elapsed time = 0h 0m 25s, Peak memory usage = 413MB
+ Total Time and Memory Usage: CPU time = 0h 0m 37s, Elapsed time = 0h 0m 37s, Peak memory usage = 459MB
 
 
 3. Resource Usage Summary
@@ -40,22 +40,22 @@
   ----------------------------------------------------------
   Resources                   | Usage
   ----------------------------------------------------------
-  Logic                       | 3838/8640  45%
-    --LUT,ALU,ROM16           | 3742(3035 LUT, 707 ALU, 0 ROM16)
-    --SSRAM(RAM16)            | 16
-  Register                    | 1459/6693  22%
+  Logic                       | 3731/8640  44%
+    --LUT,ALU,ROM16           | 3689(3015 LUT, 674 ALU, 0 ROM16)
+    --SSRAM(RAM16)            | 7
+  Register                    | 1477/6693  23%
     --Logic Register as Latch | 0/6480  0%
-    --Logic Register as FF    | 1457/6480  23%
+    --Logic Register as FF    | 1475/6480  23%
     --I/O Register as Latch   | 0/213  0%
     --I/O Register as FF      | 2/213  <1%
-  CLS                         | 2397/4320  56%
+  CLS                         | 2379/4320  56%
   I/O Port                    | 23
   I/O Buf                     | 19
     --Input Buf               | 3
     --Output Buf              | 7
     --Inout Buf               | 9
-  IOLOGIC                     | 7%
-    --OSER10                  | 3
+  IOLOGIC                     | 9%
+    --OSER10                  | 4
   BSRAM                       | 43%
     --SP                      | 8
     --SDPB                    | 2
@@ -109,7 +109,7 @@
   u_picorv32/mem_xfer| LW             |  -
   u_picorv32/n3555_3| LW             |  -
   u_picorv32/cpu_state.cpu_state_fetch| LW             |  -
-  u_hdmi/n142_5  | LW             |  -
+  u_hdmi/clk_pixel_resetn| LW             |  -
   clk_d          | HCLK           | BOTTOM[0]
   clk_p5         | HCLK           | TOP[0]
   ===========================================
