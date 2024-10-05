@@ -1,9 +1,9 @@
--d /home/muheet/tang_tangnano/TangNano-9K-example/picotiny/project/impl/gwsynthesis/picotiny.vg
+-d /home/muheet/tang_tangnano/TangNano-9K-example/picotiny/picotiny/project/impl/gwsynthesis/picotiny.vg
 -p GW1NR-9C-QFN88P-6
 -pn GW1NR-LV9QN88PC6/I5
--cst /home/muheet/tang_tangnano/TangNano-9K-example/picotiny/project/picotiny.cst
--cfg /home/muheet/tang_tangnano/TangNano-9K-example/picotiny/project/impl/pnr/device.cfg
--sdc /home/muheet/tang_tangnano/TangNano-9K-example/picotiny/project/picotiny.sdc
+-cst /home/muheet/tang_tangnano/TangNano-9K-example/picotiny/picotiny/project/picotiny.cst
+-cfg /home/muheet/tang_tangnano/TangNano-9K-example/picotiny/picotiny/project/impl/pnr/device.cfg
+-sdc /home/muheet/tang_tangnano/TangNano-9K-example/picotiny/picotiny/project/picotiny.sdc
 -bit
 -tr
 -ph

@@ -274,6 +274,199 @@ void cmd_benchmark_all()
     putchar('\n');
 }
 
+void print_value(uint32_t v){
+    if(v == 88)
+    {
+        print("X");
+    }
+    else if(v == 48)
+    {
+        print("O");
+    }
+    else {
+        print_dec(v);
+    }
+}
+
+void print_board(char *ptr1,
+                 char *ptr2,
+                 char *ptr3,
+                 char *ptr4,
+                 char *ptr5,
+                 char *ptr6,
+                 char *ptr7,
+                 char *ptr8,
+                 char *ptr9)
+{
+    print("      |      |       \n");
+    print("   ");print_value(*ptr1);print("  |   ");print_value(*ptr2);print("  |   ");print_value(*ptr3);print("   \n");
+    print("      |      |       \n");
+    print("------|------|------ \n");
+    print("      |      |       \n");
+    print("   ");print_value(*ptr4);print("  |   ");print_value(*ptr5);print("  |   ");print_value(*ptr6);print("   \n");
+    print("      |      |       \n");
+    print("------|------|------ \n");
+    print("      |      |       \n");
+    print("   ");print_value(*ptr7);print("  |   ");print_value(*ptr8);print("  |   ");print_value(*ptr9);print("   \n");
+    print("      |      |       \n");
+}
+
+void print_banner()
+{
+    print("\n");
+    print("\n");
+    print("             Player-1 key : X        \n");
+    print("             Player-2 key : O        \n");
+    print("             Enter Value from 1-9    \n");
+    print("\n");
+    print("-------------For Exit Press: Z-------------\n");
+    print("\n");
+}
+
+void tic_toe_game(char cmd)
+{
+
+    char array[9] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+
+    char val;
+    int player = 1;
+    int int_val;
+
+    print("\n");
+    print("-------------------------------\n");
+    print("--- Welcome to Tic Toe Game ---\n");
+    print("-------------------------------\n");
+
+    print_board(&array[0],
+                &array[1],
+                &array[2],
+                &array[3],
+                &array[4],
+                &array[5],
+                &array[6],
+                &array[7],
+                &array[8]);
+
+    print_banner();
+
+    while (1)
+    {
+        print("PLAYER ");
+        print_dec(player);
+        print(" TURN : \n");
+
+        char cmd = getchar();
+        int_val = cmd;
+        print("\n");
+        if(cmd == 'z' | cmd == 'Z')
+            {    break;}
+
+        if(player == 1 & array[cmd-49] != 48 & array[cmd-49] != 88)
+        {
+            print("PLAYER 1 : X\n");
+            player = player + 1;
+            val = 'X';
+            if(cmd == '1')
+                array[0] = val;
+            else if(cmd == '2')
+                array[1] = val;
+            else if(cmd == '3')
+                array[2] = val;
+            else if(cmd == '4')
+                array[3] = val;
+            else if(cmd == '5')
+                array[4] = val;
+            else if(cmd == '6')
+                array[5] = val;
+            else if(cmd == '7')
+                array[6] = val;
+            else if(cmd == '8')
+                array[7] = val;
+            else if(cmd == '9')
+                array[8] = val;
+
+            print_board(&array[0],
+                        &array[1],
+                        &array[2],
+                        &array[3],
+                        &array[4],
+                        &array[5],
+                        &array[6],
+                        &array[7],
+                        &array[8]);
+            
+            print_banner();
+        }
+        else if(player == 2 & array[cmd-49] != 48 & array[cmd-49] != 88)
+        {
+            print("PLAYER 2 : O\n");
+            player = 1;
+            val = '0';
+            if(cmd == '1')
+                array[0] = val;
+            else if(cmd == '2')
+                array[1] = val;
+            else if(cmd == '3')
+                array[2] = val;
+            else if(cmd == '4')
+                array[3] = val;
+            else if(cmd == '5')
+                array[4] = val;
+            else if(cmd == '6')
+                array[5] = val;
+            else if(cmd == '7')
+                array[6] = val;
+            else if(cmd == '8')
+                array[7] = val;
+            else if(cmd == '9')
+                array[8] = val;
+
+            print_board(&array[0],
+                        &array[1],
+                        &array[2],
+                        &array[3],
+                        &array[4],
+                        &array[5],
+                        &array[6],
+                        &array[7],
+                        &array[8]);
+        
+            print_banner();
+        }
+        else
+        {
+            print("location already updated:\n");
+        }
+
+        if(   
+              (array[0] == 88 & array[1] == 88 & array[2] == 88)
+            | (array[3] == 88 & array[4] == 88 & array[5] == 88)
+            | (array[6] == 88 & array[7] == 88 & array[8] == 88)
+            | (array[0] == 88 & array[3] == 88 & array[6] == 88)
+            | (array[1] == 88 & array[4] == 88 & array[7] == 88)
+            | (array[2] == 88 & array[5] == 88 & array[8] == 88)
+            | (array[0] == 88 & array[4] == 88 & array[8] == 88)
+            | (array[2] == 88 & array[4] == 88 & array[6] == 88)
+        ){
+            print("PLAYER 1 WIN");
+            break;
+        }
+        else if(   
+              (array[0] == 48 & array[1] == 48 & array[2] == 48)
+            | (array[3] == 48 & array[4] == 48 & array[5] == 48)
+            | (array[6] == 48 & array[7] == 48 & array[8] == 48)
+            | (array[0] == 48 & array[3] == 48 & array[6] == 48)
+            | (array[1] == 48 & array[4] == 48 & array[7] == 48)
+            | (array[2] == 48 & array[5] == 48 & array[8] == 48)
+            | (array[0] == 48 & array[4] == 48 & array[8] == 48)
+            | (array[2] == 48 & array[4] == 48 & array[6] == 48)
+        ){
+            print("PLAYER 2 WIN");
+            break;
+        }
+    }
+}
+
 volatile int i;
 // --------------------------------------------------------
 
@@ -339,6 +532,7 @@ void main()
         print("   [C] Set DSPI+CRM mode\n");
         print("   [B] Run simplistic benchmark\n");
         print("   [A] Benchmark all configs\n");
+        print("   [G] For tic toe game\n");
         
         for (int rep = 10; rep > 0; rep--)
         {
@@ -434,6 +628,11 @@ void main()
             case 'M':
             case 'm':
                 print("Muheet \n");
+                break;
+
+            case 'G':
+            case 'g':
+                tic_toe_game(cmd);
                 break;
 
             default:

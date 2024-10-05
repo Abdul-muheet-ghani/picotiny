@@ -5,34 +5,34 @@
 1. PnR Messages
 
   <Report Title>: PnR Report
-  <Design File>: /home/muheet/tang_tangnano/TangNano-9K-example/picotiny/project/impl/gwsynthesis/picotiny.vg
-  <Physical Constraints File>: /home/muheet/tang_tangnano/TangNano-9K-example/picotiny/project/picotiny.cst
-  <Timing Constraints File>: /home/muheet/tang_tangnano/TangNano-9K-example/picotiny/project/picotiny.sdc
+  <Design File>: /home/muheet/tang_tangnano/TangNano-9K-example/picotiny/picotiny/project/impl/gwsynthesis/picotiny.vg
+  <Physical Constraints File>: /home/muheet/tang_tangnano/TangNano-9K-example/picotiny/picotiny/project/picotiny.cst
+  <Timing Constraints File>: /home/muheet/tang_tangnano/TangNano-9K-example/picotiny/picotiny/project/picotiny.sdc
   <Tool Version>: V1.9.9.03 Education
   <Part Number>: GW1NR-LV9QN88PC6/I5
   <Device>: GW1NR-9
   <Device Version>: C
-  <Created Time>:Sat Sep 14 15:58:44 2024
+  <Created Time>:Sat Oct  5 23:23:52 2024
 
 
 2. PnR Details
 
   Running placement:
-    Placement Phase 0: CPU time = 0h 0m 4s, Elapsed time = 0h 0m 4s
-    Placement Phase 1: CPU time = 0h 0m 0.247s, Elapsed time = 0h 0m 0.25s
+    Placement Phase 0: CPU time = 0h 0m 3s, Elapsed time = 0h 0m 3s
+    Placement Phase 1: CPU time = 0h 0m 0.249s, Elapsed time = 0h 0m 0.248s
     Placement Phase 2: CPU time = 0h 0m 3s, Elapsed time = 0h 0m 3s
-    Placement Phase 3: CPU time = 0h 0m 6s, Elapsed time = 0h 0m 6s
-    Total Placement: CPU time = 0h 0m 14s, Elapsed time = 0h 0m 14s
+    Placement Phase 3: CPU time = 0h 0m 7s, Elapsed time = 0h 0m 7s
+    Total Placement: CPU time = 0h 0m 13s, Elapsed time = 0h 0m 13s
  Running routing:
-    Routing Phase 0: CPU time = 0h 0m 0.003s, Elapsed time = 0h 0m 0.003s
+    Routing Phase 0: CPU time = 0h 0m 0.003s, Elapsed time = 0h 0m 0.004s
     Routing Phase 1: CPU time = 0h 0m 6s, Elapsed time = 0h 0m 6s
     Routing Phase 2: CPU time = 0h 0m 10s, Elapsed time = 0h 0m 10s
     Routing Phase 3: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s
-    Total Routing: CPU time = 0h 0m 15s, Elapsed time = 0h 0m 15s
+    Total Routing: CPU time = 0h 0m 16s, Elapsed time = 0h 0m 16s
  Generate output files:
-    CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s
+    CPU time = 0h 0m 3s, Elapsed time = 0h 0m 3s
 
- Total Time and Memory Usage: CPU time = 0h 0m 31s, Elapsed time = 0h 0m 31s, Peak memory usage = 492MB
+ Total Time and Memory Usage: CPU time = 0h 0m 32s, Elapsed time = 0h 0m 32s, Peak memory usage = 413MB
 
 
 3. Resource Usage Summary
@@ -40,15 +40,15 @@
   ----------------------------------------------------------
   Resources                   | Usage
   ----------------------------------------------------------
-  Logic                       | 4313/8640  50%
-    --LUT,ALU,ROM16           | 4217(3510 LUT, 707 ALU, 0 ROM16)
+  Logic                       | 3838/8640  45%
+    --LUT,ALU,ROM16           | 3742(3035 LUT, 707 ALU, 0 ROM16)
     --SSRAM(RAM16)            | 16
-  Register                    | 1871/6693  28%
+  Register                    | 1459/6693  22%
     --Logic Register as Latch | 0/6480  0%
-    --Logic Register as FF    | 1869/6480  29%
+    --Logic Register as FF    | 1457/6480  23%
     --I/O Register as Latch   | 0/213  0%
     --I/O Register as FF      | 2/213  <1%
-  CLS                         | 2852/4320  67%
+  CLS                         | 2397/4320  56%
   I/O Port                    | 23
   I/O Buf                     | 19
     --Input Buf               | 3
@@ -56,11 +56,10 @@
     --Inout Buf               | 9
   IOLOGIC                     | 7%
     --OSER10                  | 3
-  BSRAM                       | 47%
+  BSRAM                       | 43%
     --SP                      | 8
     --SDPB                    | 2
     --DPB                     | 1
-    --pROM                    | 1
   DSP                         | 0%
   PLL                         | 1/2  50%
   DCS                         | 0/8  0%
@@ -92,7 +91,7 @@
   Global Clock  | Usage       
   -------------------------------
   PRIMARY       | 1/8(13%)
-  LW            | 4/8(50%)
+  LW            | 5/8(63%)
   GCLK_PIN      | 2/3(67%)
   PLL           | 1/2(50%)
   CLKDIV        | 1/8(13%)
@@ -108,6 +107,7 @@
   clk_p          | PRIMARY        |  TR TL BR BL
   n6_7           | LW             |  -
   u_picorv32/mem_xfer| LW             |  -
+  u_picorv32/n3555_3| LW             |  -
   u_picorv32/cpu_state.cpu_state_fetch| LW             |  -
   u_hdmi/n142_5  | LW             |  -
   clk_d          | HCLK           | BOTTOM[0]
