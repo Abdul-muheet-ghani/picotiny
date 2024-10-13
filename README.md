@@ -64,6 +64,18 @@ A PicoRV32-based SoC example with HDMI terminal from SimpleVout, SPI Flash XIP f
 
 The variables above could be configured by setting environment variables or modifying Makefile.
 
+### Installation
+    
+    sudo apt install npm
+    npm install --global xpm
+    sudo npm install --global xpm
+
+
+- Install [RISCV GCC](https://github.com/xpack-dev-tools/riscv-none-embed-gcc-xpack/releases/tag/v8.2.0-3.1/)
+
+- In Makefile replace 
+RISCV_PATH 	?= path/to/directory/xpack-riscv-none-embed-gcc-8.2.0-3.1-linux-x64/xPacks/riscv-none-embed-gcc/8.2.0-3.1
+
 ### Firmware Build
 
 - Build BROM ISP Flasher image
