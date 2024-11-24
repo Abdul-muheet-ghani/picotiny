@@ -21,6 +21,8 @@ A PicoRV32-based SoC example with HDMI terminal from SimpleVout, SPI Flash XIP f
     IP cores for the FPGA project
 - \sim
     Testbench and helper modules
+- \doc
+    Labs for FPGA Course
 ```
 
 ## Hardware
