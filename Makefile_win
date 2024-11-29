@@ -24,7 +24,7 @@ brom:
 	$(MAKE) -C fw/fw-brom
 
 flash:
-	$(MAKE) -C fw/fw-flash
+	$(MAKE) -C fw/fw-flash Makefile_win
 
 clean:
 	$(MAKE) -C fw/fw-brom clean
