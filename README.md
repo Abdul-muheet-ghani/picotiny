@@ -65,8 +65,19 @@ A PicoRV32-based SoC example with HDMI terminal from SimpleVout, SPI Flash XIP f
     Set $RISCV_NAME to GCC prefix and $RISCV_PATH to GCC root folder
 
 The variables above could be configured by setting environment variables or modifying Makefile.
+### Installation For Windows
+Open Power Shell and run below command for make:
 
-### Installation
+    Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+    Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
+    scoop bucket add main
+    scoop install main/make
+    scoop install python3
+    scoop bucket add versions
+    scoop install versions/python310
+    pip install pyserial
+
+### Installation For Linux
     
     sudo apt install npm
     npm install --global xpm
