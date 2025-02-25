@@ -8,7 +8,7 @@
 `timescale 1 ns / 1 ps
 
 
-module picotiny_tb
+module test
 ;
 
 parameter PERIOD = 1000.0/24.0;

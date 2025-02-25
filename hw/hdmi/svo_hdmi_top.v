@@ -90,6 +90,9 @@ module svo_hdmi_top (
 		.clk(clk_pixel),
 		.resetn(resetn),
 
+        .fb_in_valid (term_in_tvalid),
+        .fb_in_tdata (term_in_tdata),
+
 		.out_axis_tvalid(vdma_tvalid),
 		.out_axis_tready(vdma_tready),
 		.out_axis_tdata(vdma_tdata),

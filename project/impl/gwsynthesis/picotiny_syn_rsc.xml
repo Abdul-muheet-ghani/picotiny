@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Module name="picotiny" T_Register="1459(0)" T_Alu="652(0)" T_Lut="3046(0)" T_Bsram="11(0)" T_Ssram="16(0)">
+<Module name="picotiny" Register="2" Lut="9" T_Register="1563(2)" T_Alu="652(0)" T_Lut="3281(9)" T_Bsram="26(0)" T_Ssram="16(0)">
  <SubModule name="u_pll"/>
  <SubModule name="u_div_5"/>
  <SubModule name="u_Reset_Sync" Register="4" Alu="4" Lut="2" T_Register="4(4)" T_Alu="4(4)" T_Lut="2(2)"/>
- <SubModule name="u_picorv32" Register="605" Alu="314" Lut="1294" Bsram="2" T_Register="605(605)" T_Alu="314(314)" T_Lut="1294(1294)" T_Bsram="2(2)"/>
+ <SubModule name="u_picorv32" Register="607" Alu="314" Lut="1317" Bsram="2" T_Register="607(607)" T_Alu="314(314)" T_Lut="1317(1317)" T_Bsram="2(2)"/>
  <SubModule name="u_PicoMem_SRAM_8KB_7" Register="1" Lut="3" T_Register="1(1)" T_Lut="3(3)" T_Bsram="4(0)">
   <SubModule name="u_sram_3" Bsram="1" T_Bsram="1(1)"/>
   <SubModule name="u_sram_2" Bsram="1" T_Bsram="1(1)"/>
   <SubModule name="u_sram_1" Bsram="1" T_Bsram="1(1)"/>
   <SubModule name="u_sram_0" Bsram="1" T_Bsram="1(1)"/>
  </SubModule>
- <SubModule name="u_PicoMem_Mux_1_4_8" Lut="160" T_Lut="160(160)"/>
- <SubModule name="u_PicoMem_Mux_1_4_picop" Lut="2" T_Lut="2(2)"/>
- <SubModule name="u_PicoMem_SPI_Flash_18" Lut="8" T_Register="157(0)" T_Alu="22(0)" T_Lut="266(8)">
-  <SubModule name="u_spimemio" Register="122" Alu="22" Lut="202" T_Register="157(122)" T_Alu="22(22)" T_Lut="258(202)">
+ <SubModule name="u_PicoMem_Mux_1_4_8" Lut="171" T_Lut="171(171)"/>
+ <SubModule name="u_PicoMem_Mux_1_4_picop" Lut="4" T_Lut="4(4)"/>
+ <SubModule name="u_PicoMem_SPI_Flash_18" Lut="9" T_Register="157(0)" T_Alu="22(0)" T_Lut="263(9)">
+  <SubModule name="u_spimemio" Register="122" Alu="22" Lut="198" T_Register="157(122)" T_Alu="22(22)" T_Lut="254(198)">
    <SubModule name="xfer" Register="35" Lut="56" T_Register="35(35)" T_Lut="56(56)"/>
   </SubModule>
  </SubModule>
@@ -23,27 +23,29 @@
   <SubModule name="u_sram_1" Bsram="1" T_Bsram="1(1)"/>
   <SubModule name="u_sram_0" Bsram="1" T_Bsram="1(1)"/>
  </SubModule>
- <SubModule name="u_PicoMem_GPIO" Register="97" Lut="60" T_Register="97(97)" T_Lut="60(60)"/>
+ <SubModule name="u_PicoMem_GPIO" Register="97" Lut="59" T_Register="97(97)" T_Lut="59(59)"/>
  <SubModule name="u_PicoMem_UART" Lut="5" T_Register="131(0)" T_Alu="124(0)" T_Lut="97(5)">
   <SubModule name="u_simpleuart" Register="131" Alu="124" Lut="92" T_Register="131(131)" T_Alu="124(124)" T_Lut="92(92)"/>
  </SubModule>
- <SubModule name="u_hdmi" Register="8" Lut="1" T_Register="463(8)" T_Alu="188(0)" T_Lut="1160(1)" T_Bsram="1(0)" T_Ssram="16(0)">
-  <SubModule name="svo_tcard" Register="30" Lut="55" T_Register="30(30)" T_Lut="55(55)"/>
-  <SubModule name="svo_term" Register="243" Alu="77" Lut="623" Bsram="1" T_Register="243(243)" T_Alu="77(77)" T_Lut="623(623)" T_Bsram="1(1)"/>
-  <SubModule name="svo_overlay" Lut="8" T_Register="26(0)" T_Lut="31(8)">
-   <SubModule name="svo_buf_in" Register="2" Lut="1" T_Register="6(2)" T_Lut="7(1)">
-    <SubModule name="svo_axis_pipe" Register="4" Lut="6" T_Register="4(4)" T_Lut="6(6)"/>
+ <SubModule name="u_hdmi" Register="8" Lut="1" T_Register="563(8)" T_Alu="188(0)" T_Lut="1354(1)" T_Bsram="16(0)" T_Ssram="16(0)">
+  <SubModule name="svo_tcard" Register="71" Lut="152" T_Register="74(71)" T_Lut="170(152)" T_Bsram="15(0)">
+   <SubModule name="your_instance_name" Register="3" Lut="18" Bsram="15" T_Register="3(3)" T_Lut="18(18)" T_Bsram="15(15)"/>
+  </SubModule>
+  <SubModule name="svo_term" Register="243" Alu="77" Lut="656" Bsram="1" T_Register="243(243)" T_Alu="77(77)" T_Lut="656(656)" T_Bsram="1(1)"/>
+  <SubModule name="svo_overlay" Lut="15" T_Register="50(0)" T_Lut="42(15)">
+   <SubModule name="svo_buf_in" Register="6" Lut="1" T_Register="18(6)" T_Lut="7(1)">
+    <SubModule name="svo_axis_pipe" Register="12" Lut="6" T_Register="12(12)" T_Lut="6(6)"/>
    </SubModule>
    <SubModule name="svo_buf_over" Register="3" Lut="2" T_Register="11(3)" T_Lut="8(2)">
     <SubModule name="svo_axis_pipe" Register="8" Lut="6" T_Register="8(8)" T_Lut="6(6)"/>
    </SubModule>
-   <SubModule name="svo_buf_out" Register="3" Lut="1" T_Register="9(3)" T_Lut="8(1)">
-    <SubModule name="svo_axis_pipe" Register="6" Lut="7" T_Register="6(6)" T_Lut="7(7)"/>
+   <SubModule name="svo_buf_out" Register="7" Lut="1" T_Register="21(7)" T_Lut="12(1)">
+    <SubModule name="svo_axis_pipe" Register="14" Lut="11" T_Register="14(14)" T_Lut="11(11)"/>
    </SubModule>
   </SubModule>
-  <SubModule name="svo_enc" Register="101" Alu="6" Lut="136" Ssram="7" T_Register="101(101)" T_Alu="6(6)" T_Lut="136(136)" T_Ssram="7(7)"/>
-  <SubModule name="svo_tmds_0" Register="18" Alu="35" Lut="112" Ssram="3" T_Register="18(18)" T_Alu="35(35)" T_Lut="112(112)" T_Ssram="3(3)"/>
-  <SubModule name="svo_tmds_1" Register="18" Alu="35" Lut="99" Ssram="3" T_Register="18(18)" T_Alu="35(35)" T_Lut="99(99)" T_Ssram="3(3)"/>
-  <SubModule name="svo_tmds_2" Register="19" Alu="35" Lut="103" Ssram="3" T_Register="19(19)" T_Alu="35(35)" T_Lut="103(103)" T_Ssram="3(3)"/>
+  <SubModule name="svo_enc" Register="133" Alu="6" Lut="158" Ssram="7" T_Register="133(133)" T_Alu="6(6)" T_Lut="158(158)" T_Ssram="7(7)"/>
+  <SubModule name="svo_tmds_0" Register="18" Alu="35" Lut="111" Ssram="3" T_Register="18(18)" T_Alu="35(35)" T_Lut="111(111)" T_Ssram="3(3)"/>
+  <SubModule name="svo_tmds_1" Register="18" Alu="35" Lut="100" Ssram="3" T_Register="18(18)" T_Alu="35(35)" T_Lut="100(100)" T_Ssram="3(3)"/>
+  <SubModule name="svo_tmds_2" Register="19" Alu="35" Lut="116" Ssram="3" T_Register="19(19)" T_Alu="35(35)" T_Lut="116(116)" T_Ssram="3(3)"/>
  </SubModule>
 </Module>

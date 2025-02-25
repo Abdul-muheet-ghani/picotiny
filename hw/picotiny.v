@@ -300,9 +300,9 @@ svo_hdmi_top u_hdmi (
 	.clk_5x_pixel(clk_p5),
 	.locked(pll_lock),
 
-	.term_in_tvalid( svo_term_valid ),
+	.term_in_tvalid( gpio_valid ),
 	.term_out_tready(),
-	.term_in_tdata( uart_wdata[7:0] ),
+	.term_in_tdata( gpio_rdata[7:0]),
 
 	// output signals
 	.tmds_clk_n(tmds_clk_n),

@@ -166,7 +166,7 @@ module svo_buf #(
 	);
 endmodule
 
-
+/*
 // ----------------------------------------------------------------------
 // module svo_dim
 //
@@ -240,7 +240,7 @@ module svo_dim #( `SVO_DEFAULT_PARAMS ) (
 	);
 endmodule
 
-
+*/
 // ----------------------------------------------------------------------
 // module svo_overlay
 //
@@ -347,7 +347,7 @@ module svo_overlay #( `SVO_DEFAULT_PARAMS ) (
 	);
 endmodule
 
-
+/*
 // ----------------------------------------------------------------------
 // module svo_rect
 //
@@ -412,3 +412,4 @@ module svo_rect #( `SVO_DEFAULT_PARAMS ) (
 	end
 endmodule
 
+*/
