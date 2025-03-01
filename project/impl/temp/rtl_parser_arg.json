@@ -2,6 +2,14 @@
  "Device" : "GW1NR-9C",
  "Files" : [
   {
+   "Path" : "/home/muheet/Documents/picotiny/project/src/alu.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/muheet/Documents/picotiny/project/src/gowin_sp/gowin_sp.v",
+   "Type" : "verilog"
+  },
+  {
    "Path" : "/home/muheet/picotiny/gowin_ip/bootram_2kx8_0/bootram_2kx8_0.v",
    "Type" : "verilog"
   },
@@ -90,7 +98,7 @@
    "Type" : "verilog"
   },
   {
-   "Path" : "/home/muheet/Documents/picotiny/project/src/gowin_sp/gowin_sp.v",
+   "Path" : "/home/muheet/Documents/picotiny/project/src/decoder.v",
    "Type" : "verilog"
   }
  ],

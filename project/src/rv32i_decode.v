@@ -1,0 +1,20 @@
+//////////////////////////////////////////////////////////////////////////////////
+// Company: MERL-UITU
+// Engineer: Abdul Muheet Ghani
+// 
+// Design Name: RV32IMACZicsr for Linux
+// Module Name: RV32I-top
+// Project Name: RV32IMACZicsr for linux
+// Target Devices: 
+// Description: 
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+module rv32i_decode #(
+
+)
+(
+    
+);
+
+endmodule

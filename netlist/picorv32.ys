@@ -1,0 +1,5 @@
+read_verilog -sv -formal -overwrite {workspace}/hw/decoder.v
+read_verilog -sv -formal -overwrite {workspace}/hw/alu.v
+read_verilog -sv -formal -overwrite {workspace}/hw/picorv32.v
+design -reset-vlog; proc;
+write_json {workspace}/netlist/picorv32.json
